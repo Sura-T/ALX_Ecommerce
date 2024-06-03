@@ -1,0 +1,232 @@
+<%- include('partials/head.ejs') %>
+
+<!--HOME SECTION-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>High Quality Products</h3>
+        <span>Natural & Elegant</span>
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
+        <a href="#" class="main-btn">Shop now</a>
+    </div>
+</section>
+
+<!--About section-->
+<section class="about" id="about">
+<h1 class="heading">
+    <span>about </span>us
+</h1>
+<div class="main-row">
+    <div class="video-container">
+        <video src="https://cdn.shopify.com/s/files/1/0233/8069/files/Furniture.mp4?v=1631559889" loop autoplay muted></video>
+        <h3>Best Products</h3>
+    </div>
+    <div class="content">
+        <h3>Why choose us</h3>
+        <p>Lorem ipsum dolor sit amet conse </p>
+        <p>Lorem ipsum dolor sit amet conse</p>
+        <p>Lorem ipsum dolor sit amet conse</p>
+        <a href="#" class="main-btn">learn more</a>
+    </div>
+</div>
+
+
+</section>
+
+<!--ICONS SECTION-->
+<section class="icons-container" id="features">
+    <div class="icons">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+
+    <div class="icons">
+        <i class="fas fa-tags"></i>
+        <div class="info">
+            <h3>15 days return</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+
+    <div class="icons">
+        <i class="fas fa-gifts"></i>
+        <div class="info">
+            <h3>gifts</h3>
+            <span>gifts for loved ones</span>
+        </div>
+    </div>
+
+
+    <div class="icons">
+        <i class="fab fa-paypal"></i>
+        <div class="info">
+            <h3>secure payment</h3>
+            <span>protected by Paypal</span>
+        </div>
+    </div>
+
+</section>
+
+<!--PRODUCTS SECTION-->
+
+<section class="products" id="products">
+    <h1 class="heading">latest <span>products</span>
+    </h1>
+    <div class="box-container">
+<!--  -->
+
+<% products.forEach((product)=> { %>
+        <div class="box">
+                <div class="image">
+                    <img src="uploads/<%= product.imageUrl %>" alt="">
+                    <div class="form">
+                        <form action="">
+                            <button type="submit" class="cart-btn"> Add to Cart</button>>
+                        </form>
+                    </div>
+                </div>
+                <span class="discount">15% OFF</span>
+                <div class="content">
+                    <h3><%= product.furnitureName %></h3>
+                    <div class="price">
+                        $<%= product.price %> <span>$120</span>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+
+
+        
+    </div>
+</section>
+
+<!--CONTACT US SECTION-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+        <div class="main-row">
+            <div class="contact-info">
+                <h3>Contact number: +251 9994930904</h3>
+                <p>customer secvice <span>customer@email.com</span></p>
+                <p>returns and refunds <span>returns@email.com</span></p>
+                <p>inquiries: <span>inquiries@email.com</span></p>
+            </div>
+        </div>
+    </section>
+
+<!--REVIEWS SECTION-->
+<section class="review" id="review">
+    <h1 class="heading">customers <span>reviews</span></h1>
+    <div class="box-container">
+
+
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>awesome products, I liked those products so much</p>
+            <div class="user">
+                <img src="images/sura.jpg" alt="">
+                <div class="user-info">
+                    <h3>Sura</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>awesome products, I liked those products so much</p>
+            <div class="user">
+                <img src="images/natidv.jpg" alt="">
+                <div class="user-info">
+                    <h3>Natty</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>awesome products, I liked those products so much</p>
+            <div class="user">
+                <img src="images/ulfina.jpg" alt="">
+                <div class="user-info">
+                    <h3>Ulfina</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        
+
+
+
+    </div>
+</section>
+<!--FOOTER SECTION-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#contact">contact</a>
+            <a href="#review">review</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">cart</a>
+            <a href="#">products</a>
+            <a href="#">special offers</a>
+        </div>
+
+
+        <div class="box">
+            <h3>locations</h3>
+            <p>Australia</p>
+            <p>US
+            </p>
+            <p>Germany</p>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p>26478264874</p>
+            <p>info@email.com</p>
+        </div>
+    </div>
+
+</section>
+ 
+    <div class="credit">created by <span>Sura</span> | all rights reserved</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<%- include('partials/footer.ejs') %>

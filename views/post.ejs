@@ -1,0 +1,13 @@
+<%- include('partials/head.ejs') %>
+
+<h1 class="head">Furniture Products</h1>
+<div class="form-container">
+    <form action="/post" method="POST" enctype="multipart/form-data">
+        <input type="file" placeholder="image" name="image">
+        <input type="text" placeholder="Furniture name..." name="furnitureName">
+        <input type="number" name="price" id="" placeholder="price">
+        <button type="submit">post</button>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') %>
